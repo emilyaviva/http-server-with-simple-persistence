@@ -1,0 +1,31 @@
+{
+  "name": "http-server-with-simple-persistence",
+  "version": "1.0.0",
+  "description": "HTTP server with simple persistence",
+  "main": "server.js",
+  "scripts": {
+    "test": "gulp test",
+    "start": "node server.js"
+  },
+  "author": "Emily Aviva Kapor-Mater",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/emilyaviva/http-server-with-simple-persistence.git"
+  },
+  "bugs": {
+    "url": "https://github.com/emilyaviva/http-server-with-simple-persistence/issues"
+  },
+  "homepage": "https://github.com/emilyaviva/http-server-with-simple-persistence#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-http": "^1.0.0",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.2.5",
+    "mocha-jshint": "^2.2.3"
+  },
+  "dependencies": {
+    "express": "^4.13.1"
+  }
+}
