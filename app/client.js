@@ -2,16 +2,16 @@
 
 $(function() {
 
-  $('#input-quote').on('submit', function(event) {
+  $('#input-word').on('submit', function(event) {
     event.preventDefault();
-    if ($('#user-quote').val() !== '') {
-      var userQuote = $('#user-quote').val();
-      $.post('/quote', {quote: userQuote}, function(res) {
+    if ($('#user-word').val() !== '') {
+      var userWord = $('#user-word').val();
+      $.post('/word', {word: userWord}, function(res) {
         var confirm = response.message + ' <em>' + res.confirm + '</em>';
-        $('#quote-add-response').html(confirm);
+        $('#word-add-response').html(confirm);
       });
 
-      $('#user-quote').val('');
+      $('#user-word').val('');
     }
   });
 
